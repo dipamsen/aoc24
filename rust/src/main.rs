@@ -1,12 +1,13 @@
 use std::fs;
 
 pub mod day01;
+pub mod day02;
 
 fn main() {
     println!("Hello, world!");
 
-    let day = 1;
-    let run = day01::run;
+    let day = 2;
+    let run = day02::run;
     let filename = format!("../inputs/day{:02}.txt", day);
 
     let (a, b) = run(&fs::read_to_string(filename).expect("Can't read input file"));
