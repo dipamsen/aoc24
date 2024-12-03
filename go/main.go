@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	day := 2
-	run := Day02
+	day := 3
+	run := Day03
 	filename := fmt.Sprintf("../inputs/day%02d.txt", day)
 
 	file, err := os.ReadFile(filename)
