@@ -3,10 +3,11 @@ use std::fs;
 pub mod day01;
 pub mod day02;
 pub mod day03;
+pub mod day04;
 
 fn main() {
-    let day = 3;
-    let run = day03::run;
+    let day = 4;
+    let run = day04::run;
     let filename = format!("../inputs/day{:02}.txt", day);
 
     let (a, b) = run(&fs::read_to_string(filename).expect("Can't read input file"));
