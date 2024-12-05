@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
-	day := 4
-	run := Day04
+	day := 5
+	run := Day05
 	filename := fmt.Sprintf("../inputs/day%02d.txt", day)
 
 	file, err := os.ReadFile(filename)
@@ -18,9 +19,10 @@ func main() {
 	}
 
 	input := string(file)
+	input = strings.ReplaceAll(input, "\r\n", "\n")
 
 	a, b := run(input)
 
-	fmt.Println("Day 01:", a, b)
+	fmt.Println("Day", day, ":", a, b)
 
 }
