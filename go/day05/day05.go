@@ -1,4 +1,4 @@
-package main
+package day05
 
 import (
 	"slices"
@@ -24,7 +24,7 @@ func followRule(query []int, rule [2]int) bool { // O(m) (each query has m rules
 	return false
 }
 
-func Day05(input string) (int, int) {
+func Run(input string) (int, int) {
 	// 	input = `47|53
 	// 97|13
 	// 97|61

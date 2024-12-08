@@ -1,10 +1,10 @@
-package main
+package day04
 
 import (
 	"strings"
 )
 
-func Day04(input string) (int, int) {
+func Run(input string) (int, int) {
 
 	// 	input = `MMMSXXMASM
 	// MSAMXMSMSA

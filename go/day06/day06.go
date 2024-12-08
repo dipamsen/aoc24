@@ -1,10 +1,10 @@
-package main
+package day06
 
 import (
 	"strings"
 )
 
-func Day06(input string) (int, int) {
+func Run(input string) (int, int) {
 
 	type position struct {
 		i int

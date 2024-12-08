@@ -1,4 +1,4 @@
-package main
+package day01
 
 import (
 	"math"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Day01(input string) (int, int) {
+func Run(input string) (int, int) {
 	lines := strings.Split(input, "\n")
 	list1 := make([]int, len(lines))
 	list2 := make([]int, len(lines))

@@ -1,11 +1,11 @@
-package main
+package day03
 
 import (
 	"regexp"
 	"strconv"
 )
 
-func Day03(input string) (int, int) {
+func Run(input string) (int, int) {
 	re := regexp.MustCompile(`mul\((\d+),(\d+)\)`)
 	matches := re.FindAllStringSubmatch(input, -1)
 	indices := re.FindAllStringIndex(input, -1)

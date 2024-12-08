@@ -1,8 +1,8 @@
-package main
+package day08
 
 import "strings"
 
-func Day08(input string) (int, int) {
+func Run(input string) (int, int) {
 
 	type position struct {
 		i int

@@ -1,4 +1,4 @@
-package main
+package day02
 
 import (
 	"math"
@@ -49,7 +49,7 @@ func checkGradualMonotonic(nums []int, ignore int) bool {
 	return isSafe
 }
 
-func Day02(input string) (int, int) {
+func Run(input string) (int, int) {
 	// input = `7 6 4 2 1
 	// 1 2 7 8 9
 	// 9 7 6 2 1

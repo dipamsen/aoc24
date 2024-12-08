@@ -1,11 +1,11 @@
-package main
+package day07
 
 import (
 	"strconv"
 	"strings"
 )
 
-func Day07(input string) (int64, int64) {
+func Run(input string) (int64, int64) {
 
 	type Test struct {
 		target int64
