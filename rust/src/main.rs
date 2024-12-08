@@ -7,10 +7,11 @@ pub mod day04;
 pub mod day05;
 pub mod day06;
 pub mod day07;
+pub mod day08;
 
 fn main() {
-    let day = 7;
-    let run = day07::run;
+    let day = 8;
+    let run = day08::run;
     let filename = format!("../inputs/day{:02}.txt", day);
 
     let input = fs::read_to_string(filename)

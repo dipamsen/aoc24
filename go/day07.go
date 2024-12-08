@@ -5,12 +5,12 @@ import (
 	"strings"
 )
 
-type Test struct {
-	target int64
-	nums   []int64
-}
-
 func Day07(input string) (int64, int64) {
+
+	type Test struct {
+		target int64
+		nums   []int64
+	}
 	// 	input = `190: 10 19
 	// 3267: 81 40 27
 	// 83: 17 5
