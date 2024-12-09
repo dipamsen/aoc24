@@ -8,6 +8,7 @@ pub mod day05;
 pub mod day06;
 pub mod day07;
 pub mod day08;
+pub mod day09;
 /* insert-pub-mod */
 
 fn main() {
@@ -29,7 +30,8 @@ fn main() {
         6 => println!("{:?}", day06::run(input)),
         7 => println!("{:?}", day07::run(input)),
         8 => println!("{:?}", day08::run(input)),
-        /* insert-run */
+        9 => println!("{:?}", day09::run(&input)),
+		/* insert-run */
         _ => panic!("Day not implemented"),
     };
 }
