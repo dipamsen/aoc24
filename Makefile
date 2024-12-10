@@ -7,8 +7,9 @@ MAIN_GO = go/main.go
 init:
 	@wget --load-cookies=cookies.txt -O ./inputs/$(file).txt https://adventofcode.com/2024/day/$(day)/input 
 	@touch rust/src/$(file).rs
+	@mkdir go/$(file)
 	@touch go/$(file)/$(file).go
-	@grep -q "pub mod $(file);" $(MAIN_RS) || make update_main
+	@grep -q "pub mod $(file);" $(MAIN_RS) || make update_rs
 	@grep -q "aoc24/$(file)" $(MAIN_GO) || make update_go
 
 update_rs:
