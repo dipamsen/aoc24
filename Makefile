@@ -11,6 +11,12 @@ init:
 	@touch go/$(file)/$(file).go
 	@grep -q "pub mod $(file);" $(MAIN_RS) || make update_rs
 	@grep -q "aoc24/$(file)" $(MAIN_GO) || make update_go
+	@cat rust/src/template.rs > rust/src/$(file).rs
+	@echo "package $(file)" > go/$(file)/$(file).go
+	@echo >> go/$(file)/$(file).go
+	@echo "func Run(input string) (int, int) {" >> go/$(file)/$(file).go
+	@echo >> go/$(file)/$(file).go
+	@echo "}" >> go/$(file)/$(file).go
 
 update_rs:
 	@sed -i "s|/\* insert-run \*/|$(day) => println!(\"{:?}\", $(file)::run(\&input)),\\n\\t\\t/* insert-run */|g" $(MAIN_RS)

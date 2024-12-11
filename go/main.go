@@ -12,6 +12,8 @@ import (
 	"aoc24/day09"
 
 	"aoc24/day10"
+	"aoc24/day11"
+
 	/* insert-import */
 	"fmt"
 	"os"
@@ -57,6 +59,8 @@ func main() {
 		fmt.Println(day09.Run(input))
 	case 10:
 		fmt.Println(day10.Run(input))
+	case 11:
+		fmt.Println(day11.Run(input))
 	/* insert-case */
 	default:
 		fmt.Println("Day not implemented")
