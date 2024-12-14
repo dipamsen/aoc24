@@ -13,6 +13,7 @@ pub mod day10;
 pub mod day11;
 pub mod day12;
 pub mod day13;
+pub mod day14;
 /* insert-pub-mod */
 
 fn main() {
@@ -24,22 +25,22 @@ fn main() {
         .replace("\r\n", "\n");
     let input = input.trim();
 
-    print!("Day {:02}: ", day);
     match day {
-        1 => println!("{:?}", day01::run(input)),
-        2 => println!("{:?}", day02::run(input)),
-        3 => println!("{:?}", day03::run(input)),
-        4 => println!("{:?}", day04::run(input)),
-        5 => println!("{:?}", day05::run(input)),
-        6 => println!("{:?}", day06::run(input)),
-        7 => println!("{:?}", day07::run(input)),
-        8 => println!("{:?}", day08::run(input)),
-        9 => println!("{:?}", day09::run(&input)),
-		10 => println!("{:?}", day10::run(&input)),
-		11 => println!("{:?}", day11::run(&input)),
-		12 => println!("{:?}", day12::run(&input)),
-		13 => println!("{:?}", day13::run(&input)),
-		/* insert-run */
+        1 => println!("Day {:02}: {:?}", day, day01::run(input)),
+        2 => println!("Day {:02}: {:?}", day, day02::run(input)),
+        3 => println!("Day {:02}: {:?}", day, day03::run(input)),
+        4 => println!("Day {:02}: {:?}", day, day04::run(input)),
+        5 => println!("Day {:02}: {:?}", day, day05::run(input)),
+        6 => println!("Day {:02}: {:?}", day, day06::run(input)),
+        7 => println!("Day {:02}: {:?}", day, day07::run(input)),
+        8 => println!("Day {:02}: {:?}", day, day08::run(input)),
+        9 => println!("Day {:02}: {:?}", day, day09::run(&input)),
+        10 => println!("Day {:02}: {:?}", day, day10::run(&input)),
+        11 => println!("Day {:02}: {:?}", day, day11::run(&input)),
+        12 => println!("Day {:02}: {:?}", day, day12::run(&input)),
+        13 => println!("Day {:02}: {:?}", day, day13::run(&input)),
+        14 => println!("Day {:02}: {:?}", day, day14::run(&input)),
+        /* insert-run */
         _ => panic!("Day not implemented"),
     };
 }

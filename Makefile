@@ -19,7 +19,7 @@ init:
 	@echo "}" >> go/$(file)/$(file).go
 
 update_rs:
-	@sed -i "s|/\* insert-run \*/|$(day) => println!(\"{:?}\", $(file)::run(\&input)),\\n\\t\\t/* insert-run */|g" $(MAIN_RS)
+	@sed -i "s|/\* insert-run \*/|$(day) => println!(\"Day {:02}: {:?}\", day, $(file)::run(\&input)),\\n\\t\\t/* insert-run */|g" $(MAIN_RS)
 	@sed -i "s|/\* insert-pub-mod \*/|pub mod $(file);\\n/* insert-pub-mod */|g" $(MAIN_RS)
 
 update_go:
